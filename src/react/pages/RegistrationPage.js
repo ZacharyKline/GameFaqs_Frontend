@@ -16,4 +16,4 @@ function mapDispathToProps(){
   })
 }
 
-export default mapDispathToProps()(RegistrationPage)
+export default (RegistrationPage)
