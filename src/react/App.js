@@ -35,20 +35,20 @@ class App extends Component {
                 )}
               />
 
-            <Route
-              path={"/board"}
-              render={props => (
-                <React.Fragment>
-                  <BoardPage />
-                </React.Fragment>
-              )}
-            />
-            <Route
-              path={"/conribution"}
-              render={props => (
-                <React.Fragment>
-                  <ContributionPage />
-                </React.Fragment>
+              <Route
+                path={"/board"}
+                render={props => (
+                  <React.Fragment>
+                    <BoardPage />
+                  </React.Fragment>
+                )}
+              />
+              <Route
+                path={"/conribution"}
+                render={props => (
+                  <React.Fragment>
+                    <ContributionPage />
+                  </React.Fragment>
                 )}
               />
 
@@ -83,7 +83,7 @@ class App extends Component {
                 path={"/login "}
                 render={props => (
                   <React.Fragment>
-
+                    <LoginPage />
                   </React.Fragment>
                 )}
               />

@@ -7,9 +7,8 @@ class LoginPage extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div>
+        <div className='loginTitle'>
           <h1>LOG IN TO GAMEFAQS</h1>
-          {/* <Button>X</Button> */}
         </div>
         <div>
           <Form>
@@ -25,8 +24,8 @@ class LoginPage extends React.Component {
           </Form>
         </div>
         <div>
-          <h1>Forgot your username or password?</h1> //This will be a NavLink once thats hooked up
-          <h1>Don't have an account? Sign up for free!</h1> // Same as above
+          <h1>Forgot your username or password?</h1>
+          <h1>Don't have an account? Sign up for free!</h1>
         </div>
       </React.Fragment>
     )
