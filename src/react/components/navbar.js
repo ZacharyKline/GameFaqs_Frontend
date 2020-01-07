@@ -1,7 +1,16 @@
 import React from "react";
 import {Navbar, Nav} from 'react-bootstrap'
-
+// import { connect } from "react-redux"
 class Header extends React.Component{
+    state = {
+        current: ""
+      };
+    
+      handleClick = e => {
+        this.setState({
+          current: e.key
+        });
+      };
     render() {
         return (
             <React.Fragment>
@@ -14,7 +23,9 @@ class Header extends React.Component{
           <Nav.Link href="/faqs">Faqs</Nav.Link>
           <Nav.Link href="/conribution">Contribute</Nav.Link>
           <Nav.Link href="/games">Games</Nav.Link>
-          
+          <Nav.Link href="/account">Account</Nav.Link>
+          <Nav.Link href="/login">Login</Nav.Link>
+          <Nav.Link href="/logout"></Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
