@@ -71,7 +71,7 @@ class App extends Component {
               />
 
               <Route
-                path={"/games "}
+                path={"/games"}
                 render={props => (
                   <React.Fragment>
                     <GamesPage />
@@ -80,7 +80,7 @@ class App extends Component {
               />
 
               <Route
-                path={"/login "}
+                path={"/login"}
                 render={props => (
                   <React.Fragment>
 
@@ -89,7 +89,7 @@ class App extends Component {
               />
 
               <Route
-                path={"/ "}
+                path={"/"}
                 render={props => (
                   <React.Fragment>
 
