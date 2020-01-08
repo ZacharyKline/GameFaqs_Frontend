@@ -36,6 +36,7 @@ class App extends Component {
               />
 
               <Route
+                exact
                 path={"/board"}
                 render={props => (
                   <React.Fragment>
@@ -43,8 +44,10 @@ class App extends Component {
                   </React.Fragment>
                 )}
               />
+
               <Route
-                path={"/conribution"}
+                exact
+                path={"/contribution"}
                 render={props => (
                   <React.Fragment>
                     <ContributionPage />
@@ -53,7 +56,7 @@ class App extends Component {
               />
 
               <Route
-                path="/registration"
+                path={"/registration"}
                 render={props => (
                   <React.Fragment>
                     <RegistrationPage />
@@ -83,13 +86,14 @@ class App extends Component {
                 path={"/login"}
                 render={props => (
                   <React.Fragment>
+
                     <LoginPage />
                   </React.Fragment>
                 )}
               />
 
-              <Route
-                path={"/"}
+              {/* <Route
+                path={"/ "}
                 render={props => (
                   <React.Fragment>
 
@@ -149,7 +153,7 @@ class App extends Component {
 
                   </React.Fragment>
                 )}
-              />
+              /> */}
 
             </Switch>
           }
